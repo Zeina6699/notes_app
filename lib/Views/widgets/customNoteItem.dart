@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notesapp/view/editNoteView.dart';
-import 'package:notesapp/view/widgets/showDeleteDialog.dart';
+import 'package:notesapp/Views/editNoteView.dart';
+import 'package:notesapp/Views/widgets/showDeleteDialog.dart';
 
 class NoteItem extends StatelessWidget {
   const NoteItem({super.key});
