@@ -37,25 +37,25 @@ class _AddNoteFormState extends State<AddNoteForm> {
       autovalidateMode: autovalidateMode,
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 5,
           ),
-          customTextField(
+          CustomTextField(
               onSaved: (value) {
                 title = value;
               },
               hint: "title"),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
-          customTextField(
+          CustomTextField(
             onSaved: (value) {
               subTitle = value;
             },
             hint: "content",
             maxlines: 5,
           ),
-          SizedBox(
+          const SizedBox(
             height: 45,
           ),
           CustomButtom(
@@ -64,9 +64,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                 formkey.currentState!.save();
               } else {
                 autovalidateMode = AutovalidateMode.always;
-                setState(() {
-                  
-                });
+                setState(() {});
               }
             },
           ),

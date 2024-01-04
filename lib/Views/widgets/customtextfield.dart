@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:notesapp/constants.dart';
 
-class customTextField extends StatelessWidget {
-  const customTextField(
+class CustomTextField extends StatelessWidget {
+  const CustomTextField(
       {super.key, required this.hint, this.maxlines = 1, this.onSaved});
   final String hint;
   final int maxlines;
@@ -26,7 +26,7 @@ class customTextField extends StatelessWidget {
             enabledBorder: o(),
             focusedBorder: o(primaryColor),
             hintText: hint,
-            hintStyle: TextStyle(color: primaryColor)));
+            hintStyle: const TextStyle(color: primaryColor)));
   }
 }
 

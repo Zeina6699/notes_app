@@ -14,14 +14,14 @@ class NoteItem extends StatelessWidget {
         }));
       },
       child: Container(
-        padding: EdgeInsets.only(left: 17, top: 17, bottom: 17),
+        padding: const EdgeInsets.only(left: 17, top: 17, bottom: 17),
         decoration: BoxDecoration(
             color: Colors.yellow, borderRadius: BorderRadius.circular(16)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
-                title: Text(
+                title: const Text(
                   "Flutter Tips",
                   style: TextStyle(color: Colors.black, fontSize: 26),
                 ),
@@ -32,7 +32,7 @@ class NoteItem extends StatelessWidget {
                           color: Colors.black.withOpacity(.5), fontSize: 20)),
                 ),
                 trailing: IconButton(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.delete,
                       color: Colors.black,
                       size: 30,
@@ -41,7 +41,7 @@ class NoteItem extends StatelessWidget {
                       showDialog(
                           context: context,
                           builder: (context) {
-                            return showDeleteDialog();
+                            return  const showDeleteDialog();
                           });
                     })),
             Padding(
